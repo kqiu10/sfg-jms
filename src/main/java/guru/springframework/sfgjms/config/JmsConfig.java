@@ -7,14 +7,15 @@ import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.jms.support.converter.MessageType;
 
 /**
- * Date: 1/31/21
- * Question Description
+ * Created by jt on 2019-07-17.
  */
 @Configuration
 public class JmsConfig {
 
+    public static final String MY_QUEUE = "my-hello-world";
+
     @Bean
-    public MessageConverter messageConverter() {
+    public MessageConverter messageConverter(){
         MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
         converter.setTargetType(MessageType.TEXT);
         converter.setTypeIdPropertyName("_type");

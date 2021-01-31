@@ -9,15 +9,15 @@ import java.io.Serializable;
 import java.util.UUID;
 
 /**
- * Date: 1/31/21
- * Question Description
+ * Created by jt on 2019-07-16.
  */
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class HelloWorldMessage implements Serializable {
-    static final long serialVersionUID = 42L;
+
+    static final long serialVersionUID = -6703826490277916847L;
 
     private UUID id;
     private String message;

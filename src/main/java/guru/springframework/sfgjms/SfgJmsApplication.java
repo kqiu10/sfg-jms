@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SfgJmsApplication {
 
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Exception {
 
 		ActiveMQServer server = ActiveMQServers.newActiveMQServer(new ConfigurationImpl()
 			.setPersistenceEnabled(false)
