@@ -10,10 +10,12 @@ import org.springframework.stereotype.Component;
 import java.util.UUID;
 
 /**
- * Created by jt on 2019-07-17.
+ * Date: 1/31/21
+ * Question Description
  */
-@RequiredArgsConstructor
 @Component
+@RequiredArgsConstructor
+
 public class HelloSender {
 
     private final JmsTemplate jmsTemplate;
@@ -34,5 +36,4 @@ public class HelloSender {
         System.out.println("Message Sent!");
 
     }
-
 }
